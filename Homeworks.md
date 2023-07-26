@@ -1,4 +1,6 @@
+
 ---
+
 # Homeworks 1
 
 1. **Why is client diversity important for Ethereum?**
@@ -24,6 +26,7 @@ In Solidity, the keyword `msg.sender` is used within a function to access the ad
 But if a `view` function is called within the execution of a transaction (i.e., it's called by another function that is part of a transaction), `msg.sender` would correctly return the address of the account that initiated the transaction or the contract that made the call.
 
 ---
+
 # Homeworks 2
 
 1. **What are the advantages and disadvantages of the 256-bit word length in the EVM?**
@@ -74,6 +77,7 @@ You can follow these steps to use the Remix debugger:
 Remember that memory in Solidity is volatile and is wiped clean between external function calls. For this reason, the `add` function in the example above does not affect the contract's state.
 
 ---
+
 # Homeworks 3
 
 Sure, one gas-efficient way to delete an item from an array in Solidity without leaving a gap is to move the last element of the array to the index of the element to be deleted, and then decrease the length of the array by 1. Note that this method does not preserve the original order of the array. If order matters, this method is not appropriate, and you'd need to shift all elements down, which is more gas-expensive.
