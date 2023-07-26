@@ -111,4 +111,5 @@ contract ArrayDelete {
 In the example above, the `deleteAtIndex` function deletes an element from the `data` array at the specified index. First, it checks to ensure the index is within the bounds of the array. Then, it moves the last element of the array to the index of the element to be deleted. Finally, it removes the last element of the array, which is now a duplicate, using the `pop` function.
 
 Remember to populate the array first by calling `fillData` and passing the size of the array you want. After that, you can call `deleteAtIndex` passing the index you want to delete. You can inspect the array at any time by calling `getData` to confirm the operation worked as expected.
+
 ---
